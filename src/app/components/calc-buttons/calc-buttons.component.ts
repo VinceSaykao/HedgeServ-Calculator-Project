@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalcButtonsComponent implements OnInit {
 
-  calcButton = 'buttons';
+  // properties with starting as an empty string
+  input:string='';
+  result:string='';
 
-  constructor() { }
+  // this method 
+  onCalcInput(num:string) {
+
+
+    // if number is 0, do nothing
+    if (num == '0') {
+      if (this.input == "") {
+        return;
+      }
+
+
+    } // end of if loop
+
+
+  } // end of onCalcInput
+
+  
 
   ngOnInit(): void {
   }
