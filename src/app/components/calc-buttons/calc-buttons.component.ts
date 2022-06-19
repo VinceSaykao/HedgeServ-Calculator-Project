@@ -21,6 +21,14 @@ export class CalcButtonsComponent implements OnInit {
         return;
       }
 
+    // if operator is pressed twice in a row, do nothing
+    const operatorTwice = this.input[this.input.length - 1];
+
+    if ( operatorTwice === '+' || operatorTwice === '-' || operatorTwice === '*' || operatorTwice === '/' ) {
+      return;
+    } 
+
+
 
     } // end of if loop
 
